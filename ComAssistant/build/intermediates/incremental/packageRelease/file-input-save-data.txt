@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Thu Apr 12 23:19:01 CST 2018
+#Fri Apr 13 14:53:37 CST 2018
 19.set=ANDROID_RESOURCE
 8.set=ANDROID_RESOURCE
 1.base=D\:\\android2017\\company\\ComAssistant-master\\ComAssistant\\build\\intermediates\\res\\resources-release.ap_

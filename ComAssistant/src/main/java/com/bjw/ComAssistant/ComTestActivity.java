@@ -136,19 +136,28 @@ public class ComTestActivity extends Activity {
                 et_res.setText("");
             } else if (v== btn_send){
 //        TODO        startLoop();
-                SetiDelayTime(Com,"500");
-                SetLoopData(Com,"1B31");
-                SetAutoSend(Com,true);
+//                SetiDelayTime(Com,"500");
+//                SetLoopData(Com,"1B31");
+//                SetAutoSend(Com,true);
+                sendPortTextData(Com,"nls0006010;0302020;0313040=10;");
             }else if (v== btn_stop){
 //         TODO       stopLoop();
-                SetAutoSend(Com,false);
-                sendPortData(Com,"1B30");
+//                SetAutoSend(Com,false);
+//                sendPortHexData(Com,"1B30");
+                sendPortTextData(Com,"nls0006010;0302000;");
             }
+        }
+    }
+    //----------------------------------------------------串口发送
+    private void sendPortTextData(SerialHelper ComPort,String sOut){
+        if (ComPort!=null && ComPort.isOpen())
+        {
+            ComPort.sendTxt(sOut);
         }
     }
 
     //----------------------------------------------------串口发送
-    private void sendPortData(SerialHelper ComPort,String sOut){
+    private void sendPortHexData(SerialHelper ComPort,String sOut){
         if (ComPort!=null && ComPort.isOpen())
         {
             ComPort.sendHex(sOut);
