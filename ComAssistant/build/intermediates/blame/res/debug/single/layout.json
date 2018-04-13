@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "D:\\android2017\\company\\ComAssistant-master\\ComAssistant\\build\\intermediates\\res\\merged\\debug\\layout\\activity_test.xml",
+        "source": "D:\\android2017\\company\\ComAssistant-master\\ComAssistant\\src\\main\\res\\layout\\activity_test.xml"
+    },
+    {
+        "merged": "D:\\android2017\\company\\ComAssistant-master\\ComAssistant\\build\\intermediates\\res\\merged\\debug\\layout\\activity_com.xml",
+        "source": "D:\\android2017\\company\\ComAssistant-master\\ComAssistant\\src\\main\\res\\layout\\activity_com.xml"
+    }
+]

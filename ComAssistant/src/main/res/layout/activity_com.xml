@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <EditText
+            android:id="@+id/et_res"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/rounded_edittext"
+            android:clickable="false"
+            android:gravity="top"
+            android:longClickable="false"
+            android:layout_weight="1"
+            android:textSize="14sp"
+            android:textColor="@color/block"
+            android:editable="false"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_Clear"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="清除" />
+
+            <EditText
+                android:id="@+id/show_lines"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:editable="false"
+                android:enabled="false"
+                android:imeOptions="actionNone"
+                android:inputType="number"
+                android:longClickable="false"
+                android:text="0">
+
+                <requestFocus />
+            </EditText>
+
+            <CheckBox
+                android:id="@+id/check_clear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="自清" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <Spinner
+            android:id="@+id/SpinnerCOM"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical">
+
+            <Spinner
+                android:id="@+id/SpinnerBaudRateCOM"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <ToggleButton
+                android:id="@+id/toggleButtonCOM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ToggleButton" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical">
+
+            <Button
+                android:id="@+id/ButtonSend"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="连续扫码" />
+
+            <Button
+                android:id="@+id/ButtonStop"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="停止" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
